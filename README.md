@@ -10,7 +10,7 @@ The source code is for the [short course](https://youtu.be/XTfIVffnapo)
 
 [Course video link](https://youtu.be/XTfIVffnapo)
 
-[![Course Video Link](./doc/youtube-thumbnail-devops-local-setup-with-docker-and-devcontainers-vscode)](https://youtu.be/XTfIVffnapo)
+[![Course Video Link](./doc/youtube-thumbnail-devops-local-setup-with-docker-and-devcontainers-vscode.png)](https://youtu.be/XTfIVffnapo)
 
 Visit https://devteds.com to watch all the videos and courses on DevOps and Cloud courses.
 
