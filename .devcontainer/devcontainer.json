@@ -1,0 +1,32 @@
+{
+  "name": "DevOps CLI",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  // https://containers.dev/features
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {}
+  },
+
+  // Update the source path
+  "mounts": [
+    {
+      "source": "/Users/USERNAME/.ssh",
+      "target": "/home/vscode/.ssh",
+      "type": "bind"
+    },
+    {
+      "source": "/Users/USERNAME/.aws",
+      "target": "/home/vscode/.aws",
+      "type": "bind"
+    },
+    {
+      "source": "/Users/USERNAME/.kube",
+      "target": "/home/vscode/.kube",
+      "type": "bind"
+    }
+  ]
+}
