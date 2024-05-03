@@ -4,8 +4,9 @@ RUN apt-get update && \
     apt-get install -y xz-utils
 
 # Terraform
-ENV TERRAFORM_VERSION=1.1.2
-ENV TERRAFORM_SHA256SUM=734efa82e2d0d3df8f239ce17f7370dabd38e535d21e64d35c73e45f35dfa95c
+ENV TERRAFORM_VERSION=1.8.2
+ENV TERRAFORM_SHA256SUM=74f3cc4151e52d94e0ecbe900552adc9b8440b4a8dc12f7fdaab2d0280788acc
+
 RUN curl https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip > terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
     echo "${TERRAFORM_SHA256SUM}  terraform_${TERRAFORM_VERSION}_linux_amd64.zip" > terraform_${TERRAFORM_VERSION}_SHA256SUMS && \
     sha256sum -c terraform_${TERRAFORM_VERSION}_SHA256SUMS && \
